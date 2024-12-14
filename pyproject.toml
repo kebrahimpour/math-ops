@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.pytest.ini_options]
 testpaths = ["libs/basic_ops/add/tests", "tests"]
-pythonpath = ["libs"]
+pythonpath = ["libs", "src"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
