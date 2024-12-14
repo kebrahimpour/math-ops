@@ -1,0 +1,20 @@
+repos:
+  # Use Black for code formatting
+  - repo: https://github.com/psf/black
+    rev: 23.9.1  # Replace with the latest version
+    hooks:
+      - id: black
+
+  # Use Pylint for code linting
+  - repo: https://github.com/pre-commit/mirrors-pylint
+    rev: v3.0.0a5  # Correct version
+    hooks:
+      - id: pylint
+        additional_dependencies: ["pylint==v3.0.0a5"]
+
+  # Fix trailing whitespaces
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # Replace with the latest version
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer  # Ensures files end with a newline

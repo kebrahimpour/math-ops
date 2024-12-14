@@ -1,18 +1,18 @@
 [tool.poetry]
 name = "math-ops"
 version = "0.1.0"
-description = ""
+description = "TThis repository is created for students to practice software development using Python, Pytest, Git and best practices"
+
 authors = ["Keyvan Ebrahimpour <k1.ebrahimpour@gmail.com>"]
 readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["libs/basic_ops/add/tests", "tests"]
+pythonpath = ["libs"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.4"
-pylint = "^3.3.2"
-black = "^24.10.0"
 
 [build-system]
 requires = ["poetry-core"]
