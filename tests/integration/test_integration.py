@@ -1,11 +1,13 @@
-"""
-Module: Integration Tests
+import unittest
+from libs.basic_ops.combine import combine_operations
 
-This module contains integration tests that verify interactions between
-different components of the project.
+class TestIntegrationOperations(unittest.TestCase):
+    def test_combine_operations(self):
+        addition, subtraction, multiplication, division = combine_operations(10, 2, 3, 2)
+        self.assertEqual(addition, 12)
+        self.assertEqual(subtraction, 8)
+        self.assertEqual(multiplication, 30)
+        self.assertEqual(division, 5)
 
-### Tasks for Students:
-1. Write integration tests to verify that the CLI interacts correctly
-   with the `add` function in `libs/basic_ops/add`.
-2. Test edge cases and error scenarios.
-"""
+if __name__ == "__main__":
+    unittest.main()
