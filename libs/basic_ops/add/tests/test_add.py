@@ -2,7 +2,7 @@
 Tests for the basic addition operations module.
 """
 
-from basic_ops.add.add import add
+from libs.basic_ops.add.add import add
 
 
 def test_addition():
