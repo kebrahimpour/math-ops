@@ -29,19 +29,27 @@ To ensure high-quality code and maintainable projects, the repository also encou
 
 3. Install Poetry
 
+   ```bash
    pip install poetry==1.8.5
 
 4. Install dependencies:
 
+    ```bash
     poetry install
 
 5. Run tests:
+
+    ```bash
     poetry run pytest
 
 6. Format code:
+
+    ```bash
     poetry run black .
 
 7. Lint code:
+
+    ```bash
     poetry run pylint math_ops tests
 
 ## Contribution Guidelines
@@ -53,36 +61,43 @@ To ensure high-quality code and maintainable projects, the repository also encou
 
 1. Edit your `README.md` file:
 
+   ```bash
    nano README.md
 
-2. Add the updated content.
+2. Add the updated content/code.
 
-3. Commit and push the changes
+3. update version.txt
+
+4. Commit and push the changes
 
 ## Development Workflow
 
-### Linting with pylint
+1. Linting with pylint
 
+    ```bash
     poetry run pylint libs src
 
-### Formatting with black
+2. Formatting with black
 
+    ```bash
     poetry run black .
 
-### Auto-format specific files
+3. Auto-format specific files
 
+    ```bash
     poetry run black path/to/file.py
 
-### Pre-commit Hooks
+3. Pre-commit Hooks
+   a. Run hooks manually
 
-#### Run hooks manually
-
+    ```bash
     poetry run pre-commit run --all-files
+4. Run all tests
 
-### poetry run pytest
-
+    ```bash
     poetry run pytest
 
-### Run specific tests
+5. Run specific tests
 
+    ```bash
     poetry run pytest path/to/test_file.py
