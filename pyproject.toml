@@ -5,6 +5,7 @@ description = "TThis repository is created for students to practice software dev
 
 authors = ["Keyvan Ebrahimpour <k1.ebrahimpour@gmail.com>"]
 readme = "README.md"
+packages = [{ include = "libs" }]
 
 [tool.pytest.ini_options]
 testpaths = ["libs/basic_ops", "tests"]
@@ -13,6 +14,11 @@ pythonpath = ["libs", "src"]
 [tool.poetry.dependencies]
 python = "^3.12"
 
+[tool.poetry.dev-dependencies]
+pylint = "^2.14.0"
+black = "^22.0.0"
+pytest = "^7.0.0"
+pre-commit = "^2.20.0"
 
 [build-system]
 requires = ["poetry-core"]
