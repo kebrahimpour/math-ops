@@ -6,6 +6,5 @@ from libs.basic_ops.subtract.subtract import subtract
 
 
 def test_subtraction():
-    """Test the add function."""
-
+    """Test the subtract function."""
     assert subtract(5, 3) == 2
