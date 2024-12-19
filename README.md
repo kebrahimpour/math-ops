@@ -66,7 +66,10 @@ To ensure high-quality code and maintainable projects, the repository also encou
 
 2. Add the updated content/code.
 
-3. update version.txt
+3. Update version.txt
+
+4. Update CHANGES.md
+   short description of changes made in the corresponding version
 
 4. Commit and push the changes
 
