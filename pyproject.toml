@@ -7,6 +7,9 @@ authors = ["Keyvan Ebrahimpour <k1.ebrahimpour@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "libs" }]
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
 [tool.pytest.ini_options]
 testpaths = ["libs/basic_ops", "tests"]
 pythonpath = ["libs", "src"]
