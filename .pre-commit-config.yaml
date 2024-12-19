@@ -10,6 +10,9 @@ repos:
     rev: v3.0.0a5  # Correct version
     hooks:
       - id: pylint
+        name: pylint
+        entry: poetry run pylint
+
         additional_dependencies: ["pylint==v3.0.0a5"]
 
   # Fix trailing whitespaces
